@@ -1,5 +1,8 @@
-export function runBlock ($log, dataInsuranceService) {
+export function runBlock ($log, $localStorage, $rootScope) {
   'ngInject';
-  dataInsuranceService.getInsuranceByYear();
+
   $log.debug('runBlock end');
+
+  // setting $storage as $localStorage
+  $rootScope.$storage = $localStorage;
 }
