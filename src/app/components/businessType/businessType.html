@@ -1,0 +1,8 @@
+<div class="form-group">
+  <label for="businessType">Okres prowadzenia działalności</label>
+  <select name="businessType" id="businessType" class="form-control"
+          data-ng-model="vm.storage.businessType" data-ng-change="vm.reload()">
+    <option value="newBusiness">od 0 do 24 mc (nowy przedsiębiorca)</option>
+    <option value="oldBusiness">powyżej 24 mc (przedsiębiorca)</option>
+  </select>
+</div>
