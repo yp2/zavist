@@ -7,12 +7,13 @@ export class ZavistController {
     this.storage = $rootScope.$storage;
     this.$rootScope = $rootScope;
     this.$log = $log;
-
-    this.activate();
+    
   }
   emitCalc () {
     this.$rootScope.$broadcast('calc');
   }
-
+  emitReloadData () {
+    this.$rootScope.$broadcast('reloadData');
+  }
 
 }

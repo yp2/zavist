@@ -8,6 +8,7 @@ import {InsuranceTableDirective} from '../insurance/insuranceTable/insurance.tab
 import { MainController } from '../main/main.controller'
 import { DefaultConfigService } from '../components/defaultConfig/deafultConfig.service'
 import { BusinessTypeDirective } from  '../components/businessType/businessType.directive'
+import { BusinessTaxYear } from  '../components/businessTaxYear/businessTaxYear.directive'
 
 angular.module('zavist', [
   'ngAnimate',
@@ -29,4 +30,5 @@ angular.module('zavist', [
   .service('defaultConfigService', DefaultConfigService)
   .directive('insuranceTable', InsuranceTableDirective)
   .directive('businessType', BusinessTypeDirective)
+  .directive('businessTaxYear', BusinessTaxYear)
   .controller('MainController', MainController);

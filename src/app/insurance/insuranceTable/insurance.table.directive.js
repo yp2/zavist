@@ -21,8 +21,8 @@ class InsuranceTableController extends ZavistController {
   constructor ($rootScope, $log) {
     'ngInject';
 
-    super($rootScope, $log)
-
+    super($rootScope, $log);
+    this.activate();
   }
 
   activate () {

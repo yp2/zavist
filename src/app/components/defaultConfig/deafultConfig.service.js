@@ -10,6 +10,9 @@ export class DefaultConfigService {
   }
 
   getConfig () {
-    return this.config
+    return this.config.settings
+  }
+  getMinDataYear () {
+    return this.config.minDataYear;
   }
 }

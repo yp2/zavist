@@ -2,16 +2,7 @@
  * Created by daniel on 29.06.16.
  */
 import { ZavistController } from '../../core/base.controller.class';
-// class ZavistController {
-//   constructor ($scope) {
-//     'ngInject';
-//
-//     this.storage = $scope.$storage;
-//     this.$scope = $scope;
-//
-//     this.activate();
-//   }
-// }
+
 export function BusinessTypeDirective() {
 
   let directive = {
@@ -31,14 +22,6 @@ class BusinessTypeController extends ZavistController {
     'ngInject';
     super($rootScope, $log);
   }
-
-  activate () {
-
-    this.$log.log('aaaa', this.storage);
-  }
-
-  reload () {
-    this.$rootScope.$broadcast('reloadData');
-  }
+  
 }
 

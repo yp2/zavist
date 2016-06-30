@@ -1,0 +1,6 @@
+<div class="form-group">
+  <label for="businessTaxYear">Rok prowadzenia działalności</label>
+  <select name="businessTaxYear" id="businessTaxYear" class="form-control"
+          data-ng-model="vm.storage.businessTaxYear" data-ng-change="vm.emitReloadData()" data-ng-options="year for year in vm.getDataYears()">
+  </select>
+</div>
