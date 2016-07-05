@@ -14,11 +14,12 @@
     </thead>
     <tbody>
     <tr data-ng-repeat="contribution in vm.data">
-      <td>{{contribution.month}}</td>
-      <td>{{(vm.storage.insuranceMedical ? contribution.socialWithMedical.paid : contribution.socialWithoutMedical.paid) | currency}}</td>
-      <td>{{contribution.health.paid | currency}}</td>
-      <td>{{contribution.health.deducted | currency}}</td>
-      <td>{{contribution.laborFound.paid | currency }}</td>
+      <td>{{ contribution.month}}</td>
+      <td data-ng-if="vm.storage.insuranceMedical"><input type="text" class="form-control" data-ng-currency data-ng-model="contribution.socialWithMedical.paid"> {{contribution.socialWithMedical.paid }}</td>
+      <td data-ng-if="!vm.storage.insuranceMedical">{{contribution.socialWithoutMedical.paid}}</td>
+      <td>{{contribution.health.paid}}</td>
+      <td>{{contribution.health.deducted}}</td>
+      <td>{{contribution.laborFound.paid }}</td>
     </tr>
     </tbody>
   </table>

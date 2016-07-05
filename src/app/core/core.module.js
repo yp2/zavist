@@ -23,6 +23,7 @@ angular.module('zavist', [
   'toastr',
   'ui.bootstrap',
   'ngStorage',
+  'ng-currency',
   zavistData
 ])
   .constant('moment', moment)
