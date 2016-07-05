@@ -2,10 +2,11 @@
  * Created by daniel on 21.06.16.
  */
 var insurance = {
-  2014 : {
+  2014: {
     payDay: 10,
-    oldBusiness: {
-      1: {
+    oldBusiness: [
+      {
+        month: 1,
         socialWithMedical: {
           paid: 716.99,
           deducted: 716.99
@@ -23,7 +24,8 @@ var insurance = {
           deducted: 0
         }
       },
-      2: {
+      {
+        month: 2,
         socialWithMedical: {
           paid: 716.99,
           deducted: 716.99
@@ -41,7 +43,8 @@ var insurance = {
           deducted: 0
         }
       },
-      3: {
+      {
+        month: 3,
         socialWithMedical: {
           paid: 716.99,
           deducted: 716.99
@@ -59,7 +62,8 @@ var insurance = {
           deducted: 0
         }
       },
-      4: {
+      {
+        month: 4,
         socialWithMedical: {
           paid: 716.99,
           deducted: 716.99
@@ -77,7 +81,8 @@ var insurance = {
           deducted: 0
         }
       },
-      5: {
+      {
+        month: 5,
         socialWithMedical: {
           paid: 716.99,
           deducted: 716.99
@@ -95,7 +100,8 @@ var insurance = {
           deducted: 0
         }
       },
-      6: {
+      {
+        month: 6,
         socialWithMedical: {
           paid: 716.99,
           deducted: 716.99
@@ -113,7 +119,8 @@ var insurance = {
           deducted: 0
         }
       },
-      7: {
+      {
+        month: 7,
         socialWithMedical: {
           paid: 716.99,
           deducted: 716.99
@@ -131,7 +138,8 @@ var insurance = {
           deducted: 0
         }
       },
-      8: {
+      {
+        month: 8,
         socialWithMedical: {
           paid: 716.99,
           deducted: 716.99
@@ -149,7 +157,8 @@ var insurance = {
           deducted: 0
         }
       },
-      9: {
+      {
+        month: 9,
         socialWithMedical: {
           paid: 716.99,
           deducted: 716.99
@@ -167,7 +176,8 @@ var insurance = {
           deducted: 0
         }
       },
-      10: {
+      {
+        month: 10,
         socialWithMedical: {
           paid: 716.99,
           deducted: 716.99
@@ -185,7 +195,8 @@ var insurance = {
           deducted: 0
         }
       },
-      11: {
+      {
+        month: 11,
         socialWithMedical: {
           paid: 716.99,
           deducted: 716.99
@@ -203,7 +214,8 @@ var insurance = {
           deducted: 0
         }
       },
-      12: {
+      {
+        month: 12,
         socialWithMedical: {
           paid: 716.99,
           deducted: 716.99
@@ -221,9 +233,10 @@ var insurance = {
           deducted: 0
         }
       }
-    },
-    newBusiness: {
-      1: {
+    ],
+    newBusiness: [
+      {
+        month: 1,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -241,7 +254,8 @@ var insurance = {
           deducted: 0
         }
       },
-      2: {
+      {
+        month: 2,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -259,7 +273,8 @@ var insurance = {
           deducted: 0
         }
       },
-      3: {
+      {
+        month: 3,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -277,7 +292,8 @@ var insurance = {
           deducted: 0
         }
       },
-      4: {
+      {
+        month: 4,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -295,7 +311,8 @@ var insurance = {
           deducted: 0
         }
       },
-      5: {
+      {
+        month: 5,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -313,7 +330,8 @@ var insurance = {
           deducted: 0
         }
       },
-      6: {
+      {
+        month: 6,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -331,7 +349,8 @@ var insurance = {
           deducted: 0
         }
       },
-      7: {
+      {
+        month: 7,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -349,7 +368,8 @@ var insurance = {
           deducted: 0
         }
       },
-      8: {
+      {
+        month: 8,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -367,7 +387,8 @@ var insurance = {
           deducted: 0
         }
       },
-      9: {
+      {
+        month: 9,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -385,7 +406,8 @@ var insurance = {
           deducted: 0
         }
       },
-      10: {
+      {
+        month: 10,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -403,7 +425,8 @@ var insurance = {
           deducted: 0
         }
       },
-      11: {
+      {
+        month: 11,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -421,7 +444,8 @@ var insurance = {
           deducted: 0
         }
       },
-      12: {
+      {
+        month: 12,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -439,12 +463,13 @@ var insurance = {
           deducted: 0
         }
       }
-    }
+    ]
   },
-  2015 : {
+  2015: {
     payDay: 10,
-    oldBusiness: {
-      1: {
+    oldBusiness: [
+      {
+        month: 1,
         socialWithMedical: {
           paid: 757.76,
           deducted: 757.76
@@ -462,7 +487,8 @@ var insurance = {
           deducted: 0
         }
       },
-      2: {
+      {
+        month: 2,
         socialWithMedical: {
           paid: 757.76,
           deducted: 757.76
@@ -480,7 +506,8 @@ var insurance = {
           deducted: 0
         }
       },
-      3: {
+      {
+        month: 3,
         socialWithMedical: {
           paid: 757.76,
           deducted: 757.76
@@ -498,7 +525,8 @@ var insurance = {
           deducted: 0
         }
       },
-      4: {
+      {
+        month: 4,
         socialWithMedical: {
           paid: 754.67,
           deducted: 754.67
@@ -516,7 +544,8 @@ var insurance = {
           deducted: 0
         }
       },
-      5: {
+      {
+        month: 5,
         socialWithMedical: {
           paid: 754.67,
           deducted: 754.67
@@ -534,7 +563,8 @@ var insurance = {
           deducted: 0
         }
       },
-      6: {
+      {
+        month: 6,
         socialWithMedical: {
           paid: 754.67,
           deducted: 754.67
@@ -552,7 +582,8 @@ var insurance = {
           deducted: 0
         }
       },
-      7: {
+      {
+        month: 7,
         socialWithMedical: {
           paid: 754.67,
           deducted: 754.67
@@ -570,7 +601,8 @@ var insurance = {
           deducted: 0
         }
       },
-      8: {
+      {
+        month: 8,
         socialWithMedical: {
           paid: 754.67,
           deducted: 754.67
@@ -588,7 +620,8 @@ var insurance = {
           deducted: 0
         }
       },
-      9: {
+      {
+        month: 9,
         socialWithMedical: {
           paid: 754.67,
           deducted: 754.67
@@ -606,7 +639,8 @@ var insurance = {
           deducted: 0
         }
       },
-      10: {
+      {
+        month: 10,
         socialWithMedical: {
           paid: 754.67,
           deducted: 754.67
@@ -624,7 +658,8 @@ var insurance = {
           deducted: 0
         }
       },
-      11: {
+      {
+        month: 11,
         socialWithMedical: {
           paid: 754.67,
           deducted: 754.67
@@ -642,7 +677,8 @@ var insurance = {
           deducted: 0
         }
       },
-      12: {
+      {
+        month: 12,
         socialWithMedical: {
           paid: 754.67,
           deducted: 754.67
@@ -660,9 +696,10 @@ var insurance = {
           deducted: 0
         }
       }
-    },
-    newBusiness: {
-      1: {
+    ],
+    newBusiness: [
+      {
+        month: 1,
         socialWithMedical: {
           paid: 167.47,
           deducted: 167.47
@@ -680,7 +717,8 @@ var insurance = {
           deducted: 0
         }
       },
-      2: {
+      {
+        month: 2,
         socialWithMedical: {
           paid: 167.47,
           deducted: 167.47
@@ -698,7 +736,8 @@ var insurance = {
           deducted: 0
         }
       },
-      3: {
+      {
+        month: 3,
         socialWithMedical: {
           paid: 167.47,
           deducted: 167.47
@@ -716,7 +755,8 @@ var insurance = {
           deducted: 0
         }
       },
-      4: {
+      {
+        month: 4,
         socialWithMedical: {
           paid: 166.79,
           deducted: 166.79
@@ -734,7 +774,8 @@ var insurance = {
           deducted: 0
         }
       },
-      5: {
+      {
+        month: 5,
         socialWithMedical: {
           paid: 166.79,
           deducted: 166.79
@@ -752,7 +793,8 @@ var insurance = {
           deducted: 0
         }
       },
-      6: {
+      {
+        month: 6,
         socialWithMedical: {
           paid: 166.79,
           deducted: 166.79
@@ -770,7 +812,8 @@ var insurance = {
           deducted: 0
         }
       },
-      7: {
+      {
+        month: 7,
         socialWithMedical: {
           paid: 166.79,
           deducted: 166.79
@@ -788,7 +831,8 @@ var insurance = {
           deducted: 0
         }
       },
-      8: {
+      {
+        month: 8,
         socialWithMedical: {
           paid: 166.79,
           deducted: 166.79
@@ -806,7 +850,8 @@ var insurance = {
           deducted: 0
         }
       },
-      9: {
+      {
+        month: 9,
         socialWithMedical: {
           paid: 166.79,
           deducted: 166.79
@@ -824,7 +869,8 @@ var insurance = {
           deducted: 0
         }
       },
-      10: {
+      {
+        month: 10,
         socialWithMedical: {
           paid: 166.79,
           deducted: 166.79
@@ -842,7 +888,8 @@ var insurance = {
           deducted: 0
         }
       },
-      11: {
+      {
+        month: 11,
         socialWithMedical: {
           paid: 166.79,
           deducted: 166.79
@@ -860,7 +907,8 @@ var insurance = {
           deducted: 0
         }
       },
-      12: {
+      {
+        month: 12,
         socialWithMedical: {
           paid: 166.79,
           deducted: 166.79
@@ -878,12 +926,13 @@ var insurance = {
           deducted: 0
         }
       }
-    }
+    ]
   },
-  2016 : {
+  2016: {
     payDay: 10,
-    oldBusiness: {
-      1: {
+    oldBusiness: [
+      {
+        month: 1,
         socialWithMedical: {
           paid: 772.96,
           deducted: 772.96
@@ -901,7 +950,8 @@ var insurance = {
           deducted: 0
         }
       },
-      2: {
+      {
+        month: 2,
         socialWithMedical: {
           paid: 772.96,
           deducted: 772.96
@@ -919,7 +969,8 @@ var insurance = {
           deducted: 0
         }
       },
-      3: {
+      {
+        month: 3,
         socialWithMedical: {
           paid: 772.96,
           deducted: 772.96
@@ -937,7 +988,8 @@ var insurance = {
           deducted: 0
         }
       },
-      4: {
+      {
+        month: 4,
         socialWithMedical: {
           paid: 772.96,
           deducted: 772.96
@@ -955,7 +1007,8 @@ var insurance = {
           deducted: 0
         }
       },
-      5: {
+      {
+        month: 5,
         socialWithMedical: {
           paid: 772.96,
           deducted: 772.96
@@ -973,7 +1026,8 @@ var insurance = {
           deducted: 0
         }
       },
-      6: {
+      {
+        month: 6,
         socialWithMedical: {
           paid: 772.96,
           deducted: 772.96
@@ -991,7 +1045,8 @@ var insurance = {
           deducted: 0
         }
       },
-      7: {
+      {
+        month: 7,
         socialWithMedical: {
           paid: 772.96,
           deducted: 772.96
@@ -1009,7 +1064,8 @@ var insurance = {
           deducted: 0
         }
       },
-      8: {
+      {
+        month: 8,
         socialWithMedical: {
           paid: 772.96,
           deducted: 772.96
@@ -1027,7 +1083,8 @@ var insurance = {
           deducted: 0
         }
       },
-      9: {
+      {
+        month: 9,
         socialWithMedical: {
           paid: 772.96,
           deducted: 772.96
@@ -1045,7 +1102,8 @@ var insurance = {
           deducted: 0
         }
       },
-      10: {
+      {
+        month: 10,
         socialWithMedical: {
           paid: 772.96,
           deducted: 772.96
@@ -1063,7 +1121,8 @@ var insurance = {
           deducted: 0
         }
       },
-      11: {
+      {
+        month: 11,
         socialWithMedical: {
           paid: 772.96,
           deducted: 772.96
@@ -1081,7 +1140,8 @@ var insurance = {
           deducted: 0
         }
       },
-      12: {
+      {
+        month: 12,
         socialWithMedical: {
           paid: 772.96,
           deducted: 772.96
@@ -1099,9 +1159,10 @@ var insurance = {
           deducted: 0
         }
       }
-    },
-    newBusiness: {
-      1: {
+    ],
+    newBusiness: [
+      {
+        month: 1,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -1119,7 +1180,8 @@ var insurance = {
           deducted: 0
         }
       },
-      2: {
+      {
+        month: 2,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -1137,7 +1199,8 @@ var insurance = {
           deducted: 0
         }
       },
-      3: {
+      {
+        month: 3,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -1155,7 +1218,8 @@ var insurance = {
           deducted: 0
         }
       },
-      4: {
+      {
+        month: 4,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -1173,7 +1237,8 @@ var insurance = {
           deducted: 0
         }
       },
-      5: {
+      {
+        month: 5,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -1191,7 +1256,8 @@ var insurance = {
           deducted: 0
         }
       },
-      6: {
+      {
+        month: 6,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -1209,7 +1275,8 @@ var insurance = {
           deducted: 0
         }
       },
-      7: {
+      {
+        month: 7,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -1227,7 +1294,8 @@ var insurance = {
           deducted: 0
         }
       },
-      8: {
+      {
+        month: 8,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -1245,7 +1313,8 @@ var insurance = {
           deducted: 0
         }
       },
-      9: {
+      {
+        month: 9,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -1263,7 +1332,8 @@ var insurance = {
           deducted: 0
         }
       },
-      10: {
+      {
+        month: 10,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -1281,7 +1351,8 @@ var insurance = {
           deducted: 0
         }
       },
-      11: {
+      {
+        month: 11,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -1299,7 +1370,8 @@ var insurance = {
           deducted: 0
         }
       },
-      12: {
+      {
+        month: 12,
         socialWithMedical: {
           paid: 160.78,
           deducted: 160.78
@@ -1317,7 +1389,7 @@ var insurance = {
           deducted: 0
         }
       }
-    }
+    ]
   }
 };
 

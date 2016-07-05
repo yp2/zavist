@@ -1,0 +1,26 @@
+<div class="table-responsive">
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th rowspan="2">MC</th>
+        <th rowspan="2">Społeczna</th>
+        <th colspan="2" class="text-center">Zdrowotna</th>
+        <th rowspan="2">Fundusz pracy</th>
+      </tr>
+      <tr>
+        <th>Odliczana</th>
+        <th>Płacona</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr data-ng-repeat="contribution in vm.data">
+      <td>{{contribution.month}}</td>
+      <td>{{(vm.storage.insuranceMedical ? contribution.socialWithMedical.paid : contribution.socialWithoutMedical.paid) | currency}}</td>
+      <td>{{contribution.health.paid | currency}}</td>
+      <td>{{contribution.health.deducted | currency}}</td>
+      <td>{{contribution.laborFound.paid | currency }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<pre>{{vm.data | json}}</pre>

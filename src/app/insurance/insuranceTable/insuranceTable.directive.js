@@ -9,7 +9,7 @@ export function InsuranceTableDirective() {
   return {
     restrict: 'E',
     scope: true,
-    templateUrl: 'app/insurance/insuranceTable/insurance.table.html',
+    templateUrl: 'app/insurance/insuranceTable/insuranceTable.html',
     controller: InsuranceTableController,
     controllerAs: 'vm',
     bindToController: true
@@ -18,19 +18,29 @@ export function InsuranceTableDirective() {
 }
 
 class InsuranceTableController extends ZavistController {
-  constructor ($rootScope, $log) {
+  constructor ($rootScope, $log, dataInsuranceService) {
     'ngInject';
 
     super($rootScope, $log);
+    this.dataInsuranceService = dataInsuranceService;
     this.activate();
+
   }
 
   activate () {
     this.$log.debug('aa');
     var self = this;
+    this.getInsurance();
     this.$rootScope.$on('reloadData', function () {
-      self.$log.log('data reloaded')
+      self.$log.log('data reloaded');
+      self.getInsurance();
     })
   }
+
+  getInsurance () {
+    return this.data = this.dataInsuranceService.getInsurance(this.storage.businessTaxYear, this.storage.businessType);
+  }
+
+
 
 }
