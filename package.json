@@ -1,7 +1,9 @@
 {
   "name": "zavist",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.14.0"
+  },
   "scripts": {
     "test": "gulp test"
   },
@@ -55,5 +57,17 @@
   },
   "engines": {
     "node": ">=0.10.0"
-  }
+  },
+  "main": "server/app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yp2/zavist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yp2/zavist/issues"
+  },
+  "homepage": "https://github.com/yp2/zavist#readme",
+  "description": ""
 }

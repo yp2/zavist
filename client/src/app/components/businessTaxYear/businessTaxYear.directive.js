@@ -12,6 +12,7 @@ export function BusinessTaxYear () {
     controller: BusinessTaxYearController,
     controllerAs: 'vm',
     bindToController: true
+
   };
 
   return directive

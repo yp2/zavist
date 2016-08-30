@@ -5,7 +5,8 @@
 var config = {
   settings: {
     businessType: 'newBusiness',
-    businessTaxYear: moment().year()
+    businessTaxYear: moment().year(),
+    insuranceMedical: true
   },
   minDataYear: 2015
 };
